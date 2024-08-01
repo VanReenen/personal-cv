@@ -1,0 +1,15 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "Vannas CV",
+  "main": "server.js",
+
+  "scripts": {
+    "start": "node ./node_modules/pm2/bin/pm2 start ./server.js --name van_cv_aws --log ../logs/app.log ",
+    "stop": "node ./node_modules/pm2/bin/pm2 stop van_cv_aws",
+    "build": "echo 'Building..."
+  },
+
+  "dependencies": {"pm2": "^5.4.2"},
+  "author": "Van Reenen de Waal"
+}
